@@ -1,0 +1,65 @@
+
+[core]
+    excludesfile = ~/.gitignore
+    whitespace = blank-at-eol,cr-at-eol,tab-in-indent
+    editor = subl -n -w
+
+[user]
+    name = Beth Menzies
+    email = beth@incuna.com
+
+[alias]
+    s = status
+    a = add
+    cm = commit
+    co = checkout
+    cb = checkout -b
+    pl = pull
+    p = push
+    pu = push -u origin
+    m = merge
+    mm = merge origin/master
+    f = fetch
+    st = stash
+    stp = stash pop
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = true
+ 
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+ 
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    old = red bold
+    new = green
+ 
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+ 
+[diff]
+    renames = copies
+ 
+[help]
+    autocorrect = 0
+ 
+[merge]
+    conflictstyle = diff3
+    tool = threesome
+    defaultToUpstream = true
+ 
+[push]
+    default = simple
+ 
+[status]
+    relativePaths = true
+ 
+[github]
+    user = hippogriffic
