@@ -16,7 +16,7 @@
     cb = checkout -b
     pl = pull
     p = push
-    pu = push -u origin
+    pu = push -u
     m = merge
     mm = merge origin/master
     f = fetch
