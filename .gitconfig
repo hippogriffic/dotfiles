@@ -1,4 +1,3 @@
-
 [core]
     excludesfile = ~/.gitignore
     whitespace = blank-at-eol,cr-at-eol,tab-in-indent
@@ -22,6 +21,8 @@
     f = fetch
     st = stash
     stp = stash pop
+    std = stash drop
+    b = branch
 
 [color]
     branch = auto
