@@ -1,0 +1,41 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Monitor Aliases
+alias laptop      1280x800
+alias dell        1920x1080
+
+# Positional Aliases
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+# Throw Bindings
+bind right:ctrl;alt;cmd;shift throw right resize
+bind left:ctrl;alt;cmd;shift  throw left  resize
+
+# Resize Bindings
+bind up:ctrl;alt;cmd ${full}
+bind left:ctrl;alt;cmd ${lefthalf}
+bind right:ctrl;alt;cmd ${righthalf}
+
+bind pad7:alt;cmd;ctrl ${topleft}
+bind pad1:alt;cmd;ctrl ${bottomleft}
+bind pad9:alt;cmd;ctrl ${topright}
+bind pad3:alt;cmd;ctrl ${bottomright}
+
+# Focus Bindings
+bind right:cmd;ctrl;shift    focus right
+bind left:cmd;ctrl;shift     focus left
+bind up:cmd;ctrl;shift       focus up
+bind down:cmd;ctrl;shift     focus down
+bind up:alt;ctrl;shift       focus behind
+bind down:alt;ctrl;shift     focus behind
+
+# Window Hints
+bind esc:cmd hint

@@ -16,3 +16,7 @@ django.log
 client_media/
 npm-debug.log
 *.egg-info
+*.gz
+*.map
+yarn.lock
+media

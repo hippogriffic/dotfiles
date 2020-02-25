@@ -3,7 +3,7 @@
 	"auto_complete": false,
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+	"color_scheme": "Packages/custom theme/custom-scheme.tmTheme",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "all",
@@ -25,7 +25,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-
 		"Vintage"
 	],
 	"indent_guide_options":
